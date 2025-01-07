@@ -1,7 +1,7 @@
 from typing import Any
 
 
-def app(name: str) -> dict:
+def open_app(name: str) -> dict:
     """Helper to create app-opening action"""
     return {
         "description": f"Open {name}",

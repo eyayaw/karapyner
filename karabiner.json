@@ -1344,6 +1344,334 @@
             ]
           },
           {
+            "description": "Hyper Key sublayer \"r\"",
+            "manipulators": [
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Toggle Hyper sublayer r",
+                "from": {
+                  "key_code": "r",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "set_variable": {
+                      "name": "hyper_sublayer_r",
+                      "value": 1
+                    }
+                  }
+                ],
+                "to_after_key_up": [
+                  {
+                    "set_variable": {
+                      "name": "hyper_sublayer_r",
+                      "value": 0
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/raycast-ai/ai-chat'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/raycast-ai/ai-chat"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/thomas/color-picker/pick-color'"
+                  }
+                ],
+                "description": "Open raycast://extensions/thomas/color-picker/pick-color"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "d",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/dictionary/define-word'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/dictionary/define-word"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "e",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/emoji-symbols/search-emoji-symbols'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "f",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/file-search/search-files'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/file-search/search-files"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "l",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'com.apple.Lock-Screen-Settings.extension'"
+                  }
+                ],
+                "description": "Open com.apple.Lock-Screen-Settings.extension"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "m",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/system/toggle-mute'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/system/toggle-mute"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/raycast/confetti'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/raycast/confetti"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/snippets/search-snippets'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/snippets/search-snippets"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "t",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/gebeto/translate/translate'"
+                  }
+                ],
+                "description": "Open raycast://extensions/gebeto/translate/translate"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/clipboard-history/clipboard-history'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/clipboard-history/clipboard-history"
+              },
+              {
+                "type": "basic",
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_r",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'raycast://extensions/raycast/clipboard-history/clipboard-history'"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/clipboard-history/clipboard-history"
+              }
+            ]
+          },
+          {
             "description": "Hyper Key sublayer \"v\"",
             "manipulators": [
               {

@@ -73,6 +73,29 @@ def create_config():
         },
         # w = "Window" management
         "w": window_mgt_config(WINDOW_ACTIONS),
+        # r = "Raycast"
+        "r": {
+            "a": open_url("raycast://extensions/raycast/raycast-ai/ai-chat"),
+            "c": open_url("raycast://extensions/thomas/color-picker/pick-color"),
+            "d": open_url("raycast://extensions/raycast/dictionary/define-word"),
+            "e": open_url(
+                "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+            ),  # emoji
+            "f": open_url(
+                "raycast://extensions/raycast/file-search/search-files"
+            ),  # find
+            "l": open_url("com.apple.Lock-Screen-Settings.extension"),
+            "m": open_url("raycast://extensions/raycast/system/toggle-mute"),
+            "p": open_url("raycast://extensions/raycast/raycast/confetti"),  # party
+            "s": open_url("raycast://extensions/raycast/snippets/search-snippets"),
+            "t": open_url("raycast://extensions/gebeto/translate/translate"),
+            "h": open_url(
+                "raycast://extensions/raycast/clipboard-history/clipboard-history"
+            ),  # history
+            "v": open_url(
+                "raycast://extensions/raycast/clipboard-history/clipboard-history"
+            ),  # paste (e.g., in Pastebot we use cmd + shft + v)
+        },
         # v = "moVe" (vim-style navigation)
         "v": {
             "h": {"to": [{"key_code": "left_arrow"}]},

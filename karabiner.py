@@ -1,7 +1,7 @@
 import json
 from typing import Any
 
-from utils import app, open_url
+from utils import open_app, open_url
 
 
 class KarabinerConfig:
@@ -110,10 +110,10 @@ class KarabinerConfig:
         for key, action in bindings.items():
             if isinstance(action, str):
                 # Handle string shortcuts
-                if action.startswith("http"):
+                if "://" in action:
                     action = open_url(action)
                 else:
-                    action = app(action)
+                    action = open_app(action)
 
             manipulator = {
                 "type": "basic",
@@ -131,7 +131,7 @@ class KarabinerConfig:
                 if "to" in action:
                     manipulator["to"] = action["to"]
                 else:
-                    manipulator["to"] = [{"shell_command": f"open -a '{action}.app'"}]
+                    manipulator["to"] = open_app(action)["to"]
                 if "description" in action:
                     manipulator["description"] = action["description"]
 

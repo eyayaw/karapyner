@@ -1,0 +1,139 @@
+# sublayer key mappings
+sublayer_keys:
+  browse: "b"
+  open: "o"
+  window: "w"
+  raycast: "r"
+  move: "v"
+  system: "s"
+
+# b = "Browse"
+browse:
+  t: "https://twitter.com"
+  h: "https://github.com"
+  g: "https://gmail.com"
+  m: "https://mail.google.com"
+  o: "https://stackoverflow.com"
+  r: "https://reddit.com"
+  n: "https://news.ycombinator.com"
+  p: "https://app.tuta.com/mail" # privacy mail
+  k: "https://bsky.app"
+  u: "https://mastodon.social"
+  l: "https://linkedin.com"
+  j: "https://fedica.com/dash" # jot down posts
+  i: "https://inoreader.com/all_articles"
+  y: "https://youtube.com"
+  f: "https://facebook.com"
+
+# o = "Open" applications
+open:
+  p: "1Password" # 1 is unreachable
+  a: "Arc"
+  b: "Bruno"
+  c: "Postiron" # code
+  d: "Docker"
+  e: "Zed" # editor
+  f: "Finder"
+  g: "ChatGPT" # g-chrome, ghostty?
+  u: "Zoom.us" # hangout?
+  i: "Mail" # inbox
+  j: "Ghostty" # j is accessible for frequently used
+  k: "Claude"
+  m: "Spotify" # music
+  n: "Notes"
+  q: "CleanMyMac X"
+  r: "RStudio"
+  s: "Safari"
+  t: "Telegram"
+  h: "Zen Browser"
+  y: "lm studio"
+  v: "Visual Studio Code"
+  w: "WhatsApp"
+  z: "Zotero"
+  semicolon: "Karabiner-Elements"
+
+# w = "Window" Management (using Raycast Extension)
+window:
+  # Main positions (vim directions)
+  h: "raycast://extensions/raycast/window-management/left-half"
+  l: "raycast://extensions/raycast/window-management/right-half"
+  k: "raycast://extensions/raycast/window-management/top-half"
+  j: "raycast://extensions/raycast/window-management/bottom-half"
+  # Corners
+  u: "raycast://extensions/raycast/window-management/top-left-quarter"
+  i: "raycast://extensions/raycast/window-management/top-right-quarter"
+  n: "raycast://extensions/raycast/window-management/bottom-left-quarter"
+  m: "raycast://extensions/raycast/window-management/bottom-right-quarter"
+  # Thirds
+  d: "raycast://extensions/raycast/window-management/first-third"
+  f: "raycast://extensions/raycast/window-management/center-third"
+  g: "raycast://extensions/raycast/window-management/last-third"
+  # Two Thirds
+  e: "raycast://extensions/raycast/window-management/first-two-thirds"
+  r: "raycast://extensions/raycast/window-management/center-two-thirds"
+  t: "raycast://extensions/raycast/window-management/last-two-thirds"
+  # Display management
+  o: "raycast://extensions/raycast/window-management/next-desktop"
+  y: "raycast://extensions/raycast/window-management/previous-desktop"
+  # Special actions
+  spacebar: "raycast://extensions/raycast/window-management/almost-maximize"
+  return_or_enter: "raycast://extensions/raycast/window-management/maximize"
+  c: "raycast://extensions/raycast/window-management/center"
+  delete_or_backspace: "raycast://extensions/raycast/window-management/restore"
+
+# r = "Raycast"
+raycast:
+  j: "raycast://extensions/raycast/raycast-ai/ai-chat"
+  i: "raycast://extensions/raycast/raycast-ai/send-selection-to-ai-chat"
+  semicolon: "raycast://extensions/thomas/color-picker/pick-color"
+  # as in go to definition in vim
+  k: "raycast://extensions/raycast/dictionary/define-word"
+  o: "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+  f: "raycast://extensions/raycast/file-search/search-files"
+  l: "raycast://extensions/raycast/system/lock-screen"
+  m: "raycast://extenhions/raycast/system/toggle-mute"
+  n: "raycast://extensions/raycast/snippers/search-snippets"
+  # party
+  p: "raycast://extensions/raycast/raycast/confetti"
+  g: "raycast://extensions/gebeto/translate/translate"
+  # history or use v as in paste (e.g., in Pastebot I use cmd + shft + v)
+  h: "raycast://extensions/raycast/clipboard-history/clipboard-history"
+
+# v = "moVe" (vim-style navigation)
+move:
+  h:
+    to:
+      - key_code: "left_arrow"
+  j:
+    to:
+      - key_code: "down_arrow"
+  k:
+    to:
+      - key_code: "up_arrow"
+  l:
+    to:
+      - key_code: "right_arrow"
+  u:
+    to:
+      - key_code: "page_up"
+  d:
+    to:
+      - key_code: "page_down"
+
+# s = "System"
+system:
+  u:
+    to:
+      - key_code: "volume_increment"
+  j:
+    to:
+      - key_code: "volume_decrement"
+  i:
+    to:
+      - key_code: "display_brightness_increment"
+  k:
+    to:
+      - key_code: "display_brightness_decrement"
+  p:
+    to:
+      - key_code: "play_or_pause"

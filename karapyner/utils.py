@@ -14,9 +14,11 @@ def open_url(url: str) -> dict[str, Any]:
     return {"description": f"Open {url}", "to": [{"shell_command": f"open '{url}'"}]}
 
 
-def open_raycast_deeplink(link: str) -> dict[str, Any]:
+def open_raycast_deeplink(link: str, prefix_desc: str = "") -> dict[str, Any]:
     """Helper to open Raycast deeplink"""
+    if prefix_desc != "":
+        prefix_desc = f"{prefix_desc}: "
     return {
-        "description": f"Window: {link.split("/")[-1].replace('-', ' ').title()}",
+        "description": f"{prefix_desc}{link.split('/')[-1].replace('-', ' ').title()}",
         "to": [{"shell_command": f"open -g '{link}'"}],
     }

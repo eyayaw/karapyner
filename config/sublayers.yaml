@@ -9,20 +9,25 @@ sublayer_keys:
 
 # b = "Browse"
 browse:
-  t: "https://twitter.com"
+  j: "https://github.com/search?s=stars&o=desc"
   h: "https://github.com"
-  g: "https://gmail.com"
-  m: "https://mail.google.com"
-  o: "https://stackoverflow.com"
-  r: "https://reddit.com"
-  n: "https://news.ycombinator.com"
-  p: "https://app.tuta.com/mail" # privacy mail
-  k: "https://bsky.app"
-  u: "https://mastodon.social"
+  k: "https://kagi.com/search?q="
   l: "https://linkedin.com"
-  j: "https://fedica.com/dash" # jot down posts
-  i: "https://inoreader.com/all_articles"
+  g: "https://google.com/search?q="
+
+  n: "https://news.ycombinator.com"
+  m: "https://mail.google.com"
+  comma: "https://fedica.com/dash"
+
   y: "https://youtube.com"
+  u: "https://mastodon.social"
+  i: "https://inoreader.com/all_articles"
+  o: "https://stackoverflow.com"
+  p: "https://app.tuta.com/mail" # privacy mail
+  t: "https://twitter.com"
+
+  r: "https://reddit.com"
+  s: "https://bsky.app"
   f: "https://facebook.com"
 
 # o = "Open" applications
@@ -35,9 +40,9 @@ open:
   e: "Zed" # editor
   f: "Finder"
   g: "ChatGPT" # g-chrome, ghostty?
-  u: "Zoom.us" # hangout?
+  u: "Zoom.us"
   i: "Mail" # inbox
-  j: "Ghostty" # j is accessible for frequently used
+  j: "Ghostty" # j is accessible for frequently used app
   k: "Claude"
   m: "Spotify" # music
   n: "Notes"
@@ -91,8 +96,8 @@ raycast:
   o: "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
   f: "raycast://extensions/raycast/file-search/search-files"
   l: "raycast://extensions/raycast/system/lock-screen"
-  m: "raycast://extenhions/raycast/system/toggle-mute"
-  n: "raycast://extensions/raycast/snippers/search-snippets"
+  m: "'raycast://extensions/raycast/system/toggle-mute'"
+  n: "raycast://extensions/raycast/snippets/search-snippets"
   # party
   p: "raycast://extensions/raycast/raycast/confetti"
   g: "raycast://extensions/gebeto/translate/translate"

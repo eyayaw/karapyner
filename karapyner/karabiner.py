@@ -6,7 +6,7 @@ from typing import Any
 from config.paths import KARABINER_CONFIG_PATH
 from karapyner.builders import ConfigurationError, ManipulatorBuilder, RuleBuilder
 from karapyner.ktypes import KeyCode, Manipulator, Rule, Sublayer
-from karapyner.utils import open_app, open_url, open_raycast_deeplink
+from karapyner.utils import open_app, open_raycast_deeplink, open_url
 
 # Set up logging
 logger = logging.getLogger(__name__)
@@ -193,7 +193,7 @@ class KarabinerConfig:
             if "https://" in action:
                 action = open_url(action)
             elif "raycast://" in action:
-                action = open_raycast_deeplink(action)
+                action = open_raycast_deeplink(action, prefix_desc=layer.name)
             # TODO: add a robust way to handle app names (append .app in the config?)
             else:
                 action = open_app(action)

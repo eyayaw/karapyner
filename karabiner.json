@@ -162,7 +162,7 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "t",
+                  "key_code": "j",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -171,7 +171,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open 'https://twitter.com'"
+                    "shell_command": "open 'https://github.com/search?s=stars&o=desc'"
                   }
                 ],
                 "conditions": [
@@ -181,7 +181,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Open https://twitter.com"
+                "description": "Open https://github.com/search?s=stars&o=desc"
               },
               {
                 "type": "basic",
@@ -210,150 +210,6 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "g",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open 'https://gmail.com'"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "name": "hyper_sublayer_b",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "description": "Open https://gmail.com"
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "m",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open 'https://mail.google.com'"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "name": "hyper_sublayer_b",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "description": "Open https://mail.google.com"
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "o",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open 'https://stackoverflow.com'"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "name": "hyper_sublayer_b",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "description": "Open https://stackoverflow.com"
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "r",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open 'https://reddit.com'"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "name": "hyper_sublayer_b",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "description": "Open https://reddit.com"
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "n",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open 'https://news.ycombinator.com'"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "name": "hyper_sublayer_b",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "description": "Open https://news.ycombinator.com"
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open 'https://app.tuta.com/mail'"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "name": "hyper_sublayer_b",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "description": "Open https://app.tuta.com/mail"
-              },
-              {
-                "type": "basic",
-                "from": {
                   "key_code": "k",
                   "modifiers": {
                     "optional": [
@@ -363,7 +219,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open 'https://bsky.app'"
+                    "shell_command": "open 'https://kagi.com/search?q='"
                   }
                 ],
                 "conditions": [
@@ -373,31 +229,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Open https://bsky.app"
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "u",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open 'https://mastodon.social'"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "name": "hyper_sublayer_b",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "description": "Open https://mastodon.social"
+                "description": "Open https://kagi.com/search?q="
               },
               {
                 "type": "basic",
@@ -426,7 +258,79 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "j",
+                  "key_code": "g",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://google.com/search?q='"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://google.com/search?q="
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "n",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://news.ycombinator.com'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://news.ycombinator.com"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "m",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://mail.google.com'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://mail.google.com"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "comma",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -446,6 +350,54 @@
                   }
                 ],
                 "description": "Open https://fedica.com/dash"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "y",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://youtube.com'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://youtube.com"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "u",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://mastodon.social'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://mastodon.social"
               },
               {
                 "type": "basic",
@@ -474,7 +426,7 @@
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "y",
+                  "key_code": "o",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -483,7 +435,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open 'https://youtube.com'"
+                    "shell_command": "open 'https://stackoverflow.com'"
                   }
                 ],
                 "conditions": [
@@ -493,7 +445,103 @@
                     "value": 1
                   }
                 ],
-                "description": "Open https://youtube.com"
+                "description": "Open https://stackoverflow.com"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://app.tuta.com/mail'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://app.tuta.com/mail"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "t",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://twitter.com'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://twitter.com"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "r",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://reddit.com'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://reddit.com"
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open 'https://bsky.app'"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "name": "hyper_sublayer_b",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open https://bsky.app"
               },
               {
                 "type": "basic",
@@ -1197,7 +1245,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Left Half"
+                "description": "WINDOW: Left Half"
               },
               {
                 "type": "basic",
@@ -1221,7 +1269,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Right Half"
+                "description": "WINDOW: Right Half"
               },
               {
                 "type": "basic",
@@ -1245,7 +1293,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Top Half"
+                "description": "WINDOW: Top Half"
               },
               {
                 "type": "basic",
@@ -1269,7 +1317,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Bottom Half"
+                "description": "WINDOW: Bottom Half"
               },
               {
                 "type": "basic",
@@ -1293,7 +1341,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Top Left Quarter"
+                "description": "WINDOW: Top Left Quarter"
               },
               {
                 "type": "basic",
@@ -1317,7 +1365,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Top Right Quarter"
+                "description": "WINDOW: Top Right Quarter"
               },
               {
                 "type": "basic",
@@ -1341,7 +1389,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Bottom Left Quarter"
+                "description": "WINDOW: Bottom Left Quarter"
               },
               {
                 "type": "basic",
@@ -1365,7 +1413,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Bottom Right Quarter"
+                "description": "WINDOW: Bottom Right Quarter"
               },
               {
                 "type": "basic",
@@ -1389,7 +1437,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: First Third"
+                "description": "WINDOW: First Third"
               },
               {
                 "type": "basic",
@@ -1413,7 +1461,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Center Third"
+                "description": "WINDOW: Center Third"
               },
               {
                 "type": "basic",
@@ -1437,7 +1485,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Last Third"
+                "description": "WINDOW: Last Third"
               },
               {
                 "type": "basic",
@@ -1461,7 +1509,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: First Two Thirds"
+                "description": "WINDOW: First Two Thirds"
               },
               {
                 "type": "basic",
@@ -1485,7 +1533,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Center Two Thirds"
+                "description": "WINDOW: Center Two Thirds"
               },
               {
                 "type": "basic",
@@ -1509,7 +1557,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Last Two Thirds"
+                "description": "WINDOW: Last Two Thirds"
               },
               {
                 "type": "basic",
@@ -1533,7 +1581,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Next Desktop"
+                "description": "WINDOW: Next Desktop"
               },
               {
                 "type": "basic",
@@ -1557,7 +1605,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Previous Desktop"
+                "description": "WINDOW: Previous Desktop"
               },
               {
                 "type": "basic",
@@ -1581,7 +1629,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Almost Maximize"
+                "description": "WINDOW: Almost Maximize"
               },
               {
                 "type": "basic",
@@ -1605,7 +1653,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Maximize"
+                "description": "WINDOW: Maximize"
               },
               {
                 "type": "basic",
@@ -1629,7 +1677,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Center"
+                "description": "WINDOW: Center"
               },
               {
                 "type": "basic",
@@ -1653,7 +1701,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Restore"
+                "description": "WINDOW: Restore"
               }
             ]
           },
@@ -1717,7 +1765,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Ai Chat"
+                "description": "RAYCAST: Ai Chat"
               },
               {
                 "type": "basic",
@@ -1741,7 +1789,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Send Selection To Ai Chat"
+                "description": "RAYCAST: Send Selection To Ai Chat"
               },
               {
                 "type": "basic",
@@ -1765,7 +1813,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Pick Color"
+                "description": "RAYCAST: Pick Color"
               },
               {
                 "type": "basic",
@@ -1789,7 +1837,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Define Word"
+                "description": "RAYCAST: Define Word"
               },
               {
                 "type": "basic",
@@ -1813,7 +1861,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Search Emoji Symbols"
+                "description": "RAYCAST: Search Emoji Symbols"
               },
               {
                 "type": "basic",
@@ -1837,7 +1885,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Search Files"
+                "description": "RAYCAST: Search Files"
               },
               {
                 "type": "basic",
@@ -1861,7 +1909,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Lock Screen"
+                "description": "RAYCAST: Lock Screen"
               },
               {
                 "type": "basic",
@@ -1875,7 +1923,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open -g 'raycast://extenhions/raycast/system/toggle-mute'"
+                    "shell_command": "open -g ''raycast://extensions/raycast/system/toggle-mute''"
                   }
                 ],
                 "conditions": [
@@ -1885,7 +1933,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Toggle Mute"
+                "description": "RAYCAST: Toggle Mute'"
               },
               {
                 "type": "basic",
@@ -1899,7 +1947,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open -g 'raycast://extensions/raycast/snippers/search-snippets'"
+                    "shell_command": "open -g 'raycast://extensions/raycast/snippets/search-snippets'"
                   }
                 ],
                 "conditions": [
@@ -1909,7 +1957,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Search Snippets"
+                "description": "RAYCAST: Search Snippets"
               },
               {
                 "type": "basic",
@@ -1933,7 +1981,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Confetti"
+                "description": "RAYCAST: Confetti"
               },
               {
                 "type": "basic",
@@ -1957,7 +2005,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Translate"
+                "description": "RAYCAST: Translate"
               },
               {
                 "type": "basic",
@@ -1981,7 +2029,7 @@
                     "value": 1
                   }
                 ],
-                "description": "Window: Clipboard History"
+                "description": "RAYCAST: Clipboard History"
               }
             ]
           },
